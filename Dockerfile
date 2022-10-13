@@ -14,5 +14,6 @@ run sh /srv/openalpr/src/bindings/python/make.sh; exit 0
 
 workdir /data
 expose 8888
-CMD ["python", "/openalpr_web.py"]
+CMD ["/openalpr_web.py"]
+ENTRYPOINT ["python"]
 
